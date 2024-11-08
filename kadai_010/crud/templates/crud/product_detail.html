@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ product.name }}の詳細</title>
+</head>
+<body>
+    <h1>{{ product.name }}</h1>  <!-- 商品名 -->
+    <p>価格: ¥{{ product.price }}</p>  <!-- 商品価格 -->
+    <p>説明: {{ product.description }}</p>  <!-- 商品説明 -->
+    <p><a href="{% url 'product_list' %}">商品一覧へ戻る</a></p>  <!-- 一覧へ戻るリンク -->
+</body>
+</html>
